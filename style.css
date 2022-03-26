@@ -1,0 +1,133 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #333;
+    --gold-color: #ffca28;
+    --orange-color: #ff6d00;
+    --light-orange-color: #ffab40;
+    /* Size */
+    --font-header: 30px;
+    --font-large: 20px;
+    --font-medium: 16px;
+    --font-small: 12px;
+    --font-micro: 10px;
+    /* Padding */
+    --header-padding: 20px;
+    --padding: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--white-color);
+    outline: none;
+    border: 1px solid var(--black-color);
+    padding: calc(var(--padding)/2);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-color);
+    padding: var(--header-padding);
+    border-bottom: 1px solid var(--white-color);
+}
+
+header .logoAndTitle i {
+    font-size: var(--font-header);
+    color: var(--white-color);
+    margin-right: calc(var(--padding)/2);
+}
+
+header .logoAndTitle .title {
+    font-size: var(--font-header);
+    color: var(--orange-color);
+    font-weight: bold;
+}
+
+header .icons {
+    display: flex;
+    font-size: var(--font-large);
+}
+
+header .icons a {
+    color: var(--white-color);
+}
+
+header .icons .fa-instagram {
+    margin-right: calc(var(--padding)/2);
+}
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    background-color: var(--black-color);
+    padding: var(--padding);
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-size: var(--font-large);
+}
+
+nav ul li a {
+    color: var(--white-color);
+    padding: calc(var(--padding)/2) calc(var(--padding)*2);
+}
+
+nav ul li a:hover {
+    background-color: var(--orange-color);
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+/* Way of viewing */
+
+.howToView {
+    display: flex;
+    padding: var(--padding);
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.howToView .buttons {
+    width: 100%;
+}
+
+.howToView .buttons button:hover {
+    background-color: var(--light-orange-color);
+}
+
+/* Contents */
+
+.contents {
+    display: flex;
+}
+
+.contents .item .image {
+    width: 100%;
+    height: 100%;
+}
